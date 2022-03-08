@@ -23,7 +23,7 @@ export default function Nav( ) {
         d="M12.5 5.5c-2.522 0-4 1.513-4 4.053 0 2.523 1.444 4.086 4 4.086 2.587 0 4.284-1.591 4.284-4.086 0-2.54-1.762-4.053-4.284-4.053zm.138 6.5C10.948 12 10 11.25 10 9.553 10 7.86 10.819 7 12.5 7s2.5.86 2.5 2.553C15 11.225 14.355 12 12.638 12z"
         clipRule="evenodd"
       ></path>
-    </svg>Map</div>
+    </svg>Jason</div>
     </Link>
                 <div className = 'p-6 bg-white text-xs text-center'>    <svg
       xmlns="http://www.w3.org/2000/svg"
