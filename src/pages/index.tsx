@@ -6,6 +6,7 @@ import ButtonLink from '@/components/links/ButtonLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
+import Nav from '@/components/nav';
 
 /**
  * SVGR Support
@@ -15,7 +16,7 @@ import Seo from '@/components/Seo';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 import Vercel from '~/svg/Vercel.svg';
-
+import Map from '@/components/svgs/map';
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Seo />
 
       <main>
+        <Nav/>
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <Vercel className='text-5xl' />
@@ -60,7 +62,7 @@ export default function HomePage() {
               />
             </UnstyledLink>
 
-            <footer className='absolute bottom-2 text-gray-700'>
+            <footer className='static bottom-2 text-gray-700'>
               © {new Date().getFullYear()} By{' '}
               <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
                 Theodorus Clarence
