@@ -1,6 +1,6 @@
 
 
-export default function GoButton({} : { size: any}){
+export default function GoButton({state} : { state: any}){
     return(
         <>
             
