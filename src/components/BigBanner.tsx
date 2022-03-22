@@ -34,7 +34,7 @@ export default function BigBanner({
               10 Tips for healthy happy dogs
             </a>
             <p className='mt-2 text-white'>
-              Feeding dogs require techniques! If you don't want your dog ...
+              Feeding dogs require techniques! If you don&apos;t want your dog ...
             </p>
           </div>
         </div>

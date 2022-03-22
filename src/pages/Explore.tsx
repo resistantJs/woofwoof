@@ -5,12 +5,12 @@ export default function Explore() {
     <>
       <div className='bg-orange py-20'></div>
       <BigBanner
-        imgHeight={'10rem'}
+        imgHeight='10rem'
         featured={true}
         imgLink='/images/BigBanner.jpg'
       />
       <BigBanner
-        imgHeight={'6rem'}
+        imgHeight='6rem'
         featured={false}
         imgLink='/images/BigBanner.jpg'
       />
