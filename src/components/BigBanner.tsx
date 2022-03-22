@@ -1,18 +1,29 @@
-
-export default function BigBanner({imgHeight, featured, img}) {
+export default function BigBanner({
+  imgHeight,
+  featured,
+  imgLink,
+}: {
+  imgHeight: any;
+  featured: any;
+  imgLink: any;
+}) {
   return (
     <>
-      <div className={`mx-auto  overflow-hidden rounded-[30px] bg-orange shadow-lg w-72 ${featured && '-mt-32'}`}>
+      <div
+        className={`mx-auto  w-72 overflow-hidden rounded-[30px] bg-orange shadow-lg ${
+          featured && '-mt-32'
+        }`}
+      >
         <div className='flex flex-col'>
           <div className='shrink-0'>
             <div
               className='object-cover object-right-top '
-              style={{height:imgHeight, backgroundImage: `url(${img})`}}
+              style={{ height: imgHeight, backgroundImage: `url(${imgLink})` }}
             >
-                {!featured && <div className="text-right p-5">star</div>}
+              {!featured && <div className='p-5 text-right'>star</div>}
             </div>
           </div>
-          <div className='pb-8 px-8 pt-3'>
+          <div className='px-8 pb-8 pt-3'>
             <div className='text-sm font-semibold uppercase tracking-wide text-indigo-500'>
               Dog Tips
             </div>
@@ -28,7 +39,6 @@ export default function BigBanner({imgHeight, featured, img}) {
           </div>
         </div>
       </div>
-      
     </>
   );
 }
