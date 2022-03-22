@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Nav() {
   return (
     <>
-      <section className='fixed bottom-0 left-0 right-0 flex w-full  justify-around  text-lg'>
+      <section className='fixed bottom-0 left-0 right-0 flex w-full  justify-around  text-lg bg-white'>
         <Link href='/'>
           <div className='bg-white p-6 text-center text-xs'>
             <svg
