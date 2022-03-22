@@ -33,6 +33,7 @@ module.exports = {
           900: withOpacityValue('--tw-color-primary-900'),
         },
         dark: '#222222',
+        orange: '#FF764A'
       },
       keyframes: {
         flicker: {

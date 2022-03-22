@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <>
       <section className='fixed bottom-0 left-0 right-0 flex w-full  justify-around  text-lg'>
-        <Link href='/map'>
+        <Link href='/'>
           <div className='bg-white p-6 text-center text-xs'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -50,7 +50,7 @@ export default function Nav() {
             Explore
           </div>
         </Link>
-        <Link href='/messager'>
+        <Link href='/message'>
           <div className='bg-white p-6 text-center text-xs'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
