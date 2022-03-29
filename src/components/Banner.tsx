@@ -16,14 +16,14 @@ export default function Banner({
   return (
     <>
       <div
-        className={` overflow-hidden rounded-[30px] bg-orange shadow-lg 
+        className={`flex-shrink-0 overflow-hidden rounded-[30px] bg-orange shadow-lg 
         ${big && 'mx-auto -mt-32 w-72'} ${!big && 'w-56'}
         `}
       >
         <div className='flex flex-col'>
           <div className='shrink-0'>
             <div
-              className={`object-cover object-bottom`}
+              className={`object-cover bg-center`}
               style={{ height: imgHeight, backgroundImage: `url(${imgLink})` }}
             >
               {featured && (

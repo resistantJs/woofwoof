@@ -15,7 +15,7 @@ export default function Explore() {
       />
 
       <h2 className='my-3 mx-10'>Care</h2>
-      <div className='mx-10 flex gap-2 whitespace-normal'>
+      <div className='pl-10 pr-3 flex gap-3 overflow-x-auto'>
         <Banner
           time='10 min'
           imgHeight='8rem'
@@ -42,7 +42,7 @@ export default function Explore() {
         />
       </div>
       <h2 className='my-3 mx-10'>Guides</h2>
-      <div className='mx-10 flex gap-2 whitespace-normal pb-32'>
+      <div className='pl-10 pr-3 flex gap-3 overflow-x-auto pb-32'>
         <Banner
           time='12 min'
           imgHeight='8rem'
