@@ -29,7 +29,7 @@ export default function HomePage() {
       <Seo />
 
       <main>
-        <Nav/>
+        <Nav active='map'/>
         <SearchBar/>
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>

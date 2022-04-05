@@ -3,7 +3,7 @@ import Nav from '@/components/nav';
 export default function Explore() {
   return (
     <div className='bg-gray-100'>
-      <Nav />
+      <Nav active='explore'/>
       <div className='bg-orange py-20'></div>
       <Banner
         imgHeight='11rem'
