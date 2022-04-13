@@ -1,5 +1,16 @@
 import Nav from '@/components/nav';
-export default function Message() {
+import Friend from '@/components/friend';
+import Messager from '@/components/messager';
+import FriendsBanner from '../components/graphiccmsdemo';
+
+import { GetStaticProps } from 'next';
+import { GraphQLClient, gql } from 'graphql-request';
+
+const client = new GraphQLClient(
+  'https://api-us-west-2.graphcms.com/v2/cl1md9ra10mw601w4gfogcx4z/master'
+);
+
+export default function Message({friends}) {
   return (
     <>
       <div>
@@ -24,9 +35,44 @@ export default function Message() {
           </svg>
           </div>
         </div>
-
-
+        <FriendsBanner friends={friends}/>
+        <Messager friends = {friends}/>
       </div>
     </>
   );
 }
+
+
+
+export const getStaticProps: GetStaticProps = async () => {
+    // this is your query
+    const query = gql`
+      query MyQuery {
+        friends {
+          id
+          firstName
+          lastName
+          online
+          image {
+            url
+            id
+          }
+        }
+      }
+    `;
+  
+    //This is the request and awaiting the response
+    const data: { friends } = await client.request(query);
+  
+    if (!data.friends) {
+      return {
+        notFound: true,
+      };
+    }
+  
+    return {
+      props: { friends: [...data.friends] },
+      revalidate: 60 * 60,
+    };
+  };
+  
