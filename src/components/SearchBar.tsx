@@ -47,7 +47,7 @@ focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500'
           {filters.map((filter, i) => (
             <div
               key={i}
-              className={`rounded-full border-2 border-orange  px-3 py-2 ${i == 0 && ' text-white bg-orange' }`}
+              className={`rounded-full border-2 border-orange  px-3 py-2 ${i == 0 ? ' text-white bg-orange' : 'bg-white text-black' }`}
             >
               {filter}
             </div>

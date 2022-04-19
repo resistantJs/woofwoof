@@ -10,6 +10,8 @@ import Nav from '@/components/nav';
 import Vercel from '~/svg/Vercel.svg';
 import Map from '@/components/svgs/map';
 import SearchBar from '@/components/SearchBar';
+import SwitchButton from '@/components/SwitchButton';
+import GoButton from '@/components/GoButton';
 
 /**
  * SVGR Support
@@ -24,25 +26,20 @@ import SearchBar from '@/components/SearchBar';
 
 export default function HomePage() {
   return (
-    <Layout>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
 
-      <main>
-        <Nav active='map'/>
-        <SearchBar/>
-        <section className='bg-white'>
-          <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            
+      <div className='h-full w-full' style={{ backgroundImage: `url(images/map.jpg)` }}>
+        <Nav active='map' />
+        <SearchBar />
 
-            <ButtonLink className='mt-6' href='/components' variant='light'>
-              See all components
-            </ButtonLink>
-
-            
-          </div>
-        </section>
-      </main>
-    </Layout>
+        <div className=' min-h-screen flex-col items-center justify-center text-center'>
+        </div>
+        <div className=' absolute w-full  bottom-[130px]'>
+          <div className=' gap-12 flex justify-center '>
+        <SwitchButton />
+        <GoButton />
+        </div>
+        </div>
+      </div>
+      
   );
 }
