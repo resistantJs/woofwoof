@@ -1,4 +1,6 @@
-export default function Banner({
+import Link from "next/link";
+
+ export default function Banner({
   imgHeight,
   featured,
   imgLink,
@@ -14,7 +16,7 @@ export default function Banner({
   time: any;
 }) {
   return (
-    <>
+    <Link href='/guide'>
       <div
         className={`flex-shrink-0 overflow-hidden rounded-[30px] bg-orange shadow-lg 
         ${big && 'mx-auto -mt-32 w-72'} ${!big && 'w-56'}
@@ -48,12 +50,11 @@ export default function Banner({
             <div className='mt-3 text-xs font-semibold uppercase tracking-wide text-indigo-500'>
               {big && 'Dog Tips'}
             </div>
-            <a
-              href='/guide'
+            <div
               className='mt-0.5 block text-base font-medium leading-tight text-white hover:underline'
             >
               {title}
-            </a>
+            </div>
             {big ? (
               <p className='mt-0.5 text-xs text-white'>
                 Feeding dogs require techniques! If you don&apos;t want your dog
@@ -65,6 +66,6 @@ export default function Banner({
           </div>
         </div>
       </div>
-    </>
+    </Link>
   );
 }

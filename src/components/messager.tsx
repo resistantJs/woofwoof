@@ -33,7 +33,7 @@ export default function Messager({ friends }: { friends: any }) {
             //       </div>
             //   </div>
             // </div>
-            <div>
+            <div key='friend.id'>
               <div className='flex py-[14px]'>
                 <div className=' flex items-center rounded-full '>
                   <div
