@@ -1,8 +1,9 @@
-
+import Link from "next/link"
 
 export default function GoButton(){
     return(
         <>
+        <Link href='/go'>
             <div className='h-[59px] w-[140px] rounded-lg bg-orange '>
           <div className="flex justify-center pt-3">
         <svg
@@ -23,6 +24,7 @@ export default function GoButton(){
         </svg>
         </div>
       </div>
+      </Link>
         </>
     )
 }

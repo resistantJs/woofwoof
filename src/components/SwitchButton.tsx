@@ -1,4 +1,4 @@
-export default function SwitchButton() {
+export default function SwitchButton({active}:{active:boolean}) {
   return (
     <>
       <div className='h-[59px] w-[140px] rounded-lg bg-orange bg-opacity-90 '>
@@ -23,7 +23,7 @@ export default function SwitchButton() {
             viewBox='0 0 29 18'
           >
             <path
-              fill='#545454'
+              fill={!active ? '#545454' : '#6DF683'}
               d='M26.944.476H1.456C.674.476.04 1.11.04 1.892v14.16c0 .782.634 1.416 1.416 1.416h7.09a2.831 2.831 0 002.582-1.67l1.228-2.728c.349-.776 1.063-1.266 1.844-1.266.781 0 1.495.49 1.844 1.266l1.228 2.728a2.832 2.832 0 002.582 1.67h7.09c.782 0 1.416-.634 1.416-1.416V1.892c0-.782-.634-1.416-1.416-1.416zM7.12 11.096a2.832 2.832 0 110-5.664 2.832 2.832 0 010 5.664zm14.16 0a2.832 2.832 0 110-5.664 2.832 2.832 0 010 5.664z'
             ></path>
           </svg>

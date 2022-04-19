@@ -49,7 +49,7 @@ export default function Banner({
               {big && 'Dog Tips'}
             </div>
             <a
-              href='#'
+              href='/guide'
               className='mt-0.5 block text-base font-medium leading-tight text-white hover:underline'
             >
               {title}
